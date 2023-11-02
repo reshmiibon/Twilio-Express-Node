@@ -10,6 +10,9 @@ const accountSid = '___YOUR___ACCOUNT__SID';
 const authToken = '___YOUR___AUTHENTICATION__TOKEN'; 
 const client = new twilio(accountSid, authToken);
 
+const corsOptions = {
+    origin: "http://10.0.0.80:3002",
+  };
 const app = express(); //alias
 
 app.use(cors()); //Blocks browser from restricting any data
@@ -32,7 +35,7 @@ app.get('/send-text', (req, res) => {
     client.messages.create({
         body: textmessage,
         to: recipient,  // Text this number
-        from: '+15074734314' // From a valid Twilio number
+        from: '+12519738596' // From a valid Twilio number
     }).then((message) => console.log(message.body));
 })
 
