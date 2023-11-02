@@ -26,3 +26,23 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-control {
+  min-width: 500px;  /* or whatever minimum width you prefer */
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 5px; /* or whatever minimum width you prefer */
+  margin: 6px;
+}
+.form-group {
+  padding: 10px; /* or whatever minimum width you prefer */
+}
+.input{
+  padding-top: 5px; /* or whatever minimum width you prefer */
+}
+
